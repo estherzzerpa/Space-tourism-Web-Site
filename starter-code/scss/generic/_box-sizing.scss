@@ -1,0 +1,19 @@
+*,
+*:after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    box-sizing: border-box; 
+}
+
+.big_font{
+    font-family: $font-big; 
+   }
+   
+   .little_font, .mediun_font{
+       font-family: $font-little;
+   }
