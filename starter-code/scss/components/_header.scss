@@ -1,6 +1,5 @@
 
 .navbar_menu{
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -20,6 +19,9 @@
             background-color: $color-letras;
             width: 30%;
         }
+}
+header{
+    padding-top: 40px;
 }
 
 .lista_menu{

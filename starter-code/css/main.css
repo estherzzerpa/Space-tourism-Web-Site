@@ -1,5 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fondo_moon {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: url(/starter-code/assets/destination/image-moon.webp) #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
 .navbar_menu {
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +37,9 @@
     height: .6px;
     background-color: rgba(255, 255, 255, 0.857);
     width: 30%; }
+
+header {
+  padding-top: 40px; }
 
 .lista_menu {
   width: 60%;
@@ -68,10 +93,6 @@ html {
 .little_font, .mediun_font {
   font-family: "Barlow", sans-serif; }
 
-body {
-  background: url(/starter-code/assets/home/background-home-desktop.jpg);
-  overflow-y: hidden; }
-
 .container_main {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -90,7 +111,8 @@ body {
   .container_info .big_font {
     font-weight: 400;
     font-size: 150px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
   .container_info .mediun_font {
     font-size: 24px;
     font-weight: 300;

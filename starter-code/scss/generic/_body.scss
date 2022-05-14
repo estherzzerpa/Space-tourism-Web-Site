@@ -1,4 +1,28 @@
+
 body{
- background: url(/starter-code/assets/home/background-home-desktop.jpg);
- overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
 }
+
+
+.fondo_moon{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: url(/starter-code/assets/destination/image-moon.webp) #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment: fixed;
+}
+
+
