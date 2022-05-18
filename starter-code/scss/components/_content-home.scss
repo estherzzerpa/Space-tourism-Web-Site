@@ -15,17 +15,20 @@
     color: $color-letras;
     padding-left: 20px;
 }
+
 .big_font{
     font-weight: 400;
     font-size: $font-size-big;
     letter-spacing: 2px;     
     text-shadow: 3px 3px 3px rgba(#000000d6,.2);
 }
+
 .mediun_font{
     font-size: $font-size-mediun;
     font-weight: 300;
     letter-spacing: 2px;     
 }
+
 .little_font{
     width: 68%;
     font-weight:lighter;
@@ -34,22 +37,32 @@
 }
 
 .button_explore{
-    width:30% ;
-    button{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    font-family: $font-big;
-    font-weight: 500;
-    font-size: $font-size-mediun;
-    letter-spacing: 4px;
-    box-shadow: 1px 1px 1px 10px rgba(#3a363699,.2);
-    transition: ease-in all .5s;
-    &:hover{
-        box-shadow: 1px 1px 1px 40px rgba(#00000099,.2);
 
-    }
-    }
+    width:30% ;
+
+        button{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer,
+        font{
+            family: $font-big;
+            weight: 500;
+            size: $font-size-mediun;
+        };
+        cursor: pointer;
+        letter-spacing: 4px;
+        box-shadow: 1px 1px 1px 10px rgba(#3a363699,.2);
+        transition: ease-in all .5s;
+
+            &:hover{
+                box-shadow: 1px 1px 1px 40px rgba(#00000099,.2);
+                filter: blur(8);
+                backdrop-filter: blur(8px);
+                background-color: rgba(0, 0, 0, 0.1);
+                color: $color-letras;
+
+            }
+        }
 }

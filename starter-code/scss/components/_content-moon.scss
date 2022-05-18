@@ -13,13 +13,19 @@
     margin-bottom: 90px;
     img{
         width: 80%;
-        margin: 70px 80px;   
+        margin: 70px 70px;   
+        transition: 1s ease all;
+        animation: Wave 5s linear infinite;
+        border-radius: 50%;
+        // border: 10px solid rgba(#00000099,.2);
     }
     strong{
         padding: 10px;
+        
     }
     
 }
+
 
 .info_section{
     height: 65%;

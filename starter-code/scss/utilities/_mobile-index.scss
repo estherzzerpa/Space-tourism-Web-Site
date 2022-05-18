@@ -1,5 +1,12 @@
-@media screen and (max-width:620px) {
-    .lista_menu li{
-        display: none;
-    }
+@media screen and (max-width:770px) {
+   .container_main{
+       grid-template-columns: 1fr;
+   }
+   .container_info{
+       margin-top: 100px;
+   }
+   .button_explore{
+       height: 300px;
+   }
+
 }
