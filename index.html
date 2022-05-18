@@ -9,26 +9,24 @@
   <link rel="stylesheet" href="./starter-code/css/main.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
-  <div>
+<body class="bg-home">
+
    <header>
-    
       <nav class="navbar_menu">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
   
         <ul class="lista_menu">
-          <li><strong>00</strong>HOME</li>
-          <li><strong>01</strong>DESTINATION</li>
-          <li><strong>02</strong>CREW</li>
-          <li><strong>03</strong>TECHNOLOGY</li>
-    
+          <li><a href="index.html"> <strong>00</strong>HOME</a></li>
+          <li><a href="./starter-code/destination-moon.html"><strong>01</strong>DESTINATION</a></li>
+          <li  id="crew"><strong>02</strong>CREW</li>
+          <li id="tech"><strong>03</strong>TECHNOLOGY</li>
         </ul>
       </nav>
     </header>
   
     <main class="container_main">
   
-      <section class="container_info">
+      <section class="container_info info-home">
         <h3 class="mediun_font">SO, YOU WANT TO TRAVEL TO</h3>
         
         <h1 class="big_font">SPACE</h1>
@@ -40,11 +38,7 @@
       <section class="button_explore">
         <button>EXPLORE</button>
       </section>
-  
-    </main>
-  
-  
-  </div>
-    
+    </main>  
+    <script src="app.js"></script>
 </body>
 </html>

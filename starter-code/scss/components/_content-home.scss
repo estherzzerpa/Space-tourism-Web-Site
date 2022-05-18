@@ -1,39 +1,41 @@
+@import "../elements/grid-main";
+
 .container_main{
-    display: grid;
+    @extend .grid_main;
     grid-template-columns: 2fr 1fr;
-    height: 100vh;
-    justify-items: center;
-    align-items: center;
+ 
 }
 
 .container_info{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    margin-top: 250px;
     height: 100%;
     width: 70%;
     color: $color-letras;
     padding-left: 20px;
-    .big_font{
-        font-weight: 400;
-        font-size: $font-size-big;
-        letter-spacing: 2px;     
-        text-shadow: 3px 3px 3px rgba(#000000d6,.2);
-    }
-    .mediun_font{
-        font-size: $font-size-mediun;
-        font-weight: 300;
-        letter-spacing: 2px;     
-    }
-    .little_font{
-        width: 68%;
-        font-weight:lighter;
-        height: 100px;
-        letter-spacing: 1px;     
-    }
+}
+.big_font{
+    font-weight: 400;
+    font-size: $font-size-big;
+    letter-spacing: 2px;     
+    text-shadow: 3px 3px 3px rgba(#000000d6,.2);
+}
+.mediun_font{
+    font-size: $font-size-mediun;
+    font-weight: 300;
+    letter-spacing: 2px;     
+}
+.little_font{
+    width: 68%;
+    font-weight:lighter;
+    height: 100px;
+    letter-spacing: 1px;     
 }
 
-.button_explore button{
+.button_explore{
+    width:30% ;
+    button{
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -43,10 +45,11 @@
     font-weight: 500;
     font-size: $font-size-mediun;
     letter-spacing: 4px;
-    box-shadow: 1px 1px 1px 10px rgba(#00000099,.2);
+    box-shadow: 1px 1px 1px 10px rgba(#3a363699,.2);
     transition: ease-in all .5s;
     &:hover{
         box-shadow: 1px 1px 1px 40px rgba(#00000099,.2);
 
+    }
     }
 }

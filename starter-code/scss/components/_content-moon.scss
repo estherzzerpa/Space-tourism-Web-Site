@@ -1,0 +1,39 @@
+.container_main{
+    @extend .grid_main;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mini_menu{
+    @include containermenu(70%, rgba(47, 43, 43, 0.1));
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.moon-destination {
+    margin-bottom: 90px;
+    img{
+        width: 80%;
+        margin: 70px 80px;   
+    }
+    strong{
+        padding: 10px;
+    }
+    
+}
+
+.info_section{
+    height: 65%;
+    width: 63%;
+}
+.text_info{
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    margin-top: 30px;
+    padding-left: 0;
+    grid-gap:50px ;
+
+}
+
