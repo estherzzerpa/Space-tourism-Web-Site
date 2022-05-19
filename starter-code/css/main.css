@@ -2,24 +2,17 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden; }
 
 .bg-home {
   background-image: url(../assets/home/background-home-desktop.jpg); }
 
 .bg-destination {
   background-image: url(../assets/destination/background-destination-desktop.jpg); }
-
-.bg-crew {
-  background-image: url(../assets/crew/background-crew-desktop.jpg);
-  opacity: 0; }
-
-.bg-tech {
-  background-image: url(../assets/technology/background-technology-desktop.jpg);
-  display: none; }
 
 .capa-bLur {
   filter: blur(8);
@@ -113,10 +106,9 @@ body::-webkit-scrollbar-thumb {
 
 .grid_main, .container_main {
   display: grid;
-  height: 100vh;
+  height: 100%;
   justify-items: center;
-  align-items: center;
-  overflow: hidden; }
+  align-items: center; }
 
 .container_main {
   grid-template-columns: 2fr 1fr; }
@@ -211,15 +203,12 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 90px; }
   .moon-destination img {
     width: 80%;
-    margin: 70px 70px;
-    transition: 1s ease all;
-    animation: Wave 5s linear infinite;
-    border-radius: 50%; }
+    margin: 70px 70px; }
   .moon-destination strong {
     padding: 10px; }
 
 .info_section {
-  height: 65%;
+  height: 100%;
   width: 63%; }
 
 .text_info {
@@ -228,13 +217,38 @@ body::-webkit-scrollbar-thumb {
 .footer {
   display: flex;
   margin-top: 30px;
-  padding-left: 0;
-  grid-gap: 50px; }
+  grid-gap: 50px;
+  padding-bottom: 100px; }
 
 @media screen and (max-width: 770px) {
   .container_main {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center; }
   .container_info {
     margin-top: 100px; }
   .button_explore {
-    height: 300px; } }
+    height: 300px; }
+  .info_section {
+    height: 60%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .moon-destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    height: 50%; }
+    .moon-destination img {
+      width: 60%;
+      margin: 20px 30px; }
+  .bg-destination {
+    overflow-y: scroll; }
+  .mini_menu {
+    justify-content: center; }
+  .navbar_menu::before {
+    display: none; } }
