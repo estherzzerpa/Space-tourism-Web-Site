@@ -246,7 +246,7 @@ body::-webkit-scrollbar-thumb {
     .moon-destination img {
       width: 60%;
       margin: 20px 30px; }
-  .bg-destination {
+  .bg-destination, .bg-home {
     overflow-y: scroll; }
   .mini_menu {
     justify-content: center; }
